@@ -9,13 +9,15 @@
         "@schematics/angular:component": {
           "inlineTemplate": false,
           "inlineStyle": false,
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:class": {
           "skipTests": true
         },
         "@schematics/angular:directive": {
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:guard": {
           "skipTests": true
@@ -24,7 +26,8 @@
           "skipTests": true
         },
         "@schematics/angular:pipe": {
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:resolver": {
           "skipTests": true
@@ -56,15 +59,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -109,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "221f9c7e-c325-45a1-8a7c-3dcc758e6335"
+    "analytics": "019c61b3-0e85-4b6e-a346-c03ed30e804b"
   }
 }
