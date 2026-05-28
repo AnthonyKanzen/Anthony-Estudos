@@ -10,7 +10,7 @@
           "inlineTemplate": false,
           "inlineStyle": false,
           "skipTests": true,
-          "standalone": false
+          "standalone": true
         },
         "@schematics/angular:class": {
           "skipTests": true
@@ -54,9 +54,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css",
               "src/styles.css"
             ],
             "scripts": []
