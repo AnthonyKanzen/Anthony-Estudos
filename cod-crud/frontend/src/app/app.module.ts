@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FooterComponent } from "./components/template/footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -13,8 +14,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserModule,
     AppRoutingModule,
     HeaderComponent,
+    FooterComponent,
     MatToolbarModule
-  ],
+    
+],
   providers: [],
   bootstrap: [AppComponent]
 })
