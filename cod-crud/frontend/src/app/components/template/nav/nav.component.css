@@ -1,0 +1,56 @@
+.sidenav {
+    background-color: #f5f5f5;
+
+    width: 190px;
+
+    border-radius: 0 !important;
+
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.18);
+}
+
+.nav-list {
+    padding-top: 5px;
+}
+
+.sidenav a {
+    height: 42px;
+
+    margin: 2px 6px;
+
+    border-radius: 0 !important;
+
+    color: #333333;
+}
+
+.sidenav a:hover {
+    background-color: #e0e0e0;
+}
+
+/* mantém ícone e texto lado a lado */
+.sidenav a .mdc-list-item__content {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidenav a .mdc-list-item__primary-text {
+    display: flex !important;
+    align-items: center !important;
+
+    color: #333333;
+}
+
+/* ícones */
+.sidenav i {
+    margin-right: 10px;
+
+    font-size: 20px;
+
+    color: #212121;
+}
+
+/* nomes */
+.sidenav span {
+    color: #333333;
+
+    font-size: 0.9rem;
+}

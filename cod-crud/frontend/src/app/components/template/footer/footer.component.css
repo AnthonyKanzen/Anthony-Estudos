@@ -1,12 +1,56 @@
-.footer{
+.footer {
     position: fixed;
     bottom: 0;
+    right: 0;
+
+    width: auto;
+    height: 24px;
 
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 8px;
+
+    background: #000000;
+    color: white;
+
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    z-index: 1000;
 }
 
 .footer > span {
-    font-size: 1.1rem;
-    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    white-space: nowrap;
+
+    font-size: 0.65rem;
+}
+
+.footer strong {
+    font-weight: 700;
+}
+
+.name {
+    color: white;
+}
+
+.red {
+    color: #b71c1c;
+}
+
+.v-middle {
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.japan {
+    margin-left: 5px;
+    color: white;
+    font-size: 0.55rem;
 }
