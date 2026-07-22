@@ -1,15 +1,10 @@
 .header {
     display: flex;
     align-items: center;
-
     height: 64px;
-
     background-color: #000000;
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-
     color: white;
-
     padding: 0;
 }
 
@@ -17,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 190px; /* mesmo tamanho do menu */
     height: 100%;
 }
@@ -25,21 +19,16 @@
 .header a {
     display: flex;
     align-items: center;
-
     height: 100%;
-
     text-decoration: none;
-
     color: white;
 }
 
 .header .logo {
     height: 64px;
     width: 190px;
-
     object-fit: contain;
     object-position: center center;
-
     transform: scale(2);
     transform-origin: center center;
 }

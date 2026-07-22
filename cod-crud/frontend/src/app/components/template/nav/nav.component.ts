@@ -1,12 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenav, MatSidenavContainer } from "@angular/material/sidenav";
-import { MatListModule } from "@angular/material/list";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
-  standalone: true,
-  imports: [MatToolbarModule, MatSidenav, MatSidenavContainer, MatListModule],
+  standalone: false,
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })

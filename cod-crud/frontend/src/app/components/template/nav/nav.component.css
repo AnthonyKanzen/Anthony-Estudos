@@ -1,10 +1,7 @@
 .sidenav {
     background-color: #f5f5f5;
-
     width: 190px;
-
     border-radius: 0 !important;
-
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.18);
 }
 
@@ -14,11 +11,8 @@
 
 .sidenav a {
     height: 42px;
-
     margin: 2px 6px;
-
     border-radius: 0 !important;
-
     color: #333333;
 }
 
@@ -35,7 +29,6 @@
 .sidenav a .mdc-list-item__primary-text {
     display: flex !important;
     align-items: center !important;
-
     color: #333333;
 }
 
@@ -53,4 +46,18 @@
     color: #333333;
 
     font-size: 0.9rem;
+}
+
+/* fundo geral */
+.mat-sidenav-container {
+    background-color: white;
+}
+
+/* conteúdo da página */
+.content {
+
+    margin-left: 2px;
+    padding: 16px;
+    min-height: 100%;
+    border-left: 2px solid white;
 }
