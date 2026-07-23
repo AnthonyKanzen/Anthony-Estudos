@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { ProductComponent } from "./components/views/product/product.component";
+import { RedDirective } from './components/directives/red.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent,
+    RedDirective,
+    
   ],
   imports: [
     BrowserModule,
@@ -25,8 +30,9 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
-  ],
+    MatCardModule,
+    
+],
   providers: [],
   bootstrap: [AppComponent]
 })
