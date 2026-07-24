@@ -6,12 +6,14 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
+import { ProductComponent } from "./components/views/product/product.component";
+import { RedDirective } from './components/directives/red.directive';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { ProductComponent } from "./components/views/product/product.component";
-import { RedDirective } from './components/directives/red.directive';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { RedDirective } from './components/directives/red.directive';
     NavComponent,
     HomeComponent,
     ProductComponent,
-    RedDirective,
+    RedDirective
     
   ],
   imports: [
@@ -31,7 +33,8 @@ import { RedDirective } from './components/directives/red.directive';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    
+    MatButtonModule,
+    MatSnackBarModule
 ],
   providers: [],
   bootstrap: [AppComponent]
