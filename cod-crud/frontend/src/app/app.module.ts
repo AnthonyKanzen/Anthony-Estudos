@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
-import { ProductComponent } from "./components/views/product/product.component";
+import { ProductComponent } from './components/views/product/product.component';
 import { RedDirective } from './components/directives/red.directive';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -14,17 +14,26 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
+import { RegisterProductComponent } from './components/register-product/register-product.component';
+import { ReadProductComponent } from './components/read-product/read-product.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent,
-    HomeComponent,
-    ProductComponent,
-    RedDirective
-    
+  AppComponent,
+  HeaderComponent,
+  FooterComponent,
+  NavComponent,
+  HomeComponent,
+  ProductComponent,
+  RegisterProductComponent,
+  ReadProductComponent,
+  RedDirective
+
   ],
   imports: [
     BrowserModule,
@@ -34,9 +43,14 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
-],
-  providers: [],
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+  ],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

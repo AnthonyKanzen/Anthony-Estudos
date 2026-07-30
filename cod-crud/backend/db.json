@@ -1,19 +1,14 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Borracha",
-      "price": 5
+      "name": "Mouse",
+      "price": "200,00",
+      "id": "HclM3e30Z20"
     },
     {
-      "id": "2",
-      "name": "Caderno",
-      "price": 11.98
-    },
-    {
-      "id": "3",
-      "name": "Bala",
-      "price": 0.5
+      "name": "Teclado",
+      "price": "200,00",
+      "id": "NCpyVxi6ZJk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

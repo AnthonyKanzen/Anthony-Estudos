@@ -1,6 +1,7 @@
 import { RegisterProductService } from './register-product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../../models/product.model';
 
 @Component({
   selector: 'app-register-product',
@@ -10,6 +11,11 @@ import { Router } from '@angular/router';
 })
 export class RegisterProductComponent implements OnInit {
 
+  product: Product = {
+    name: '',
+    price: null
+  }
+
   constructor(private RegisterProductService: RegisterProductService,
     private router: Router){}
 
@@ -17,10 +23,12 @@ export class RegisterProductComponent implements OnInit {
       
   }
   registerProduct(): void {
-    this.RegisterProductService.showOnMenssage('Produto Registrado!')
+    this.RegisterProductService.register(this.product).subscribe(() =>{
+      this.RegisterProductService.showOnMenssage('Produto Registrado!')
+      this.router.navigate(['/product'])
+    }) 
   }
    cancel(): void {
     this.router.navigate(['/product'])
   }
-  
 }
