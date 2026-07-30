@@ -20,6 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { RegisterProductComponent } from './components/register-product/register-product.component';
 import { ReadProductComponent } from './components/read-product/read-product.component';
+import { ProductTableComponent } from './product-table/product-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -32,7 +36,8 @@ import { ReadProductComponent } from './components/read-product/read-product.com
   ProductComponent,
   RegisterProductComponent,
   ReadProductComponent,
-  RedDirective
+  RedDirective,
+  ProductTableComponent
 
   ],
   imports: [
@@ -47,6 +52,9 @@ import { ReadProductComponent } from './components/read-product/read-product.com
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [
     provideHttpClient()
