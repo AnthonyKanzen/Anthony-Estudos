@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReadProductComponent implements OnInit {
 
   products: Product[] = [];
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private RegisterProductService: RegisterProductService) {
 
@@ -19,7 +20,6 @@ export class ReadProductComponent implements OnInit {
   ngOnInit(): void {
     this.RegisterProductService.read().subscribe(product =>{
       this.products = product
-      console.log('lista')
     })
   }
 

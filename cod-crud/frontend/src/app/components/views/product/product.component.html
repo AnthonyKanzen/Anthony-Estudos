@@ -1,6 +1,10 @@
-<button mat-raised-button (click)="navigateToRegisterProduct()">
-  Novo Produto
-</button>
-
-<app-read-product></app-read-product>
-<app-product-table></app-product-table>
+<div class="table-wrapper">
+    <div class="table-actions">
+        <button mat-raised-button (click)="navigateToRegisterProduct()">
+            Novo Produto
+        </button>
+    </div>
+    <div class="table-container">
+        <app-read-product></app-read-product>
+    </div>
+</div>
