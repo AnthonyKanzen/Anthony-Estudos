@@ -41,20 +41,20 @@ mat-form-field {
     font-weight: 500;
 }
 
-.save-button {
-    background-color: #2e7d32 !important;
-    color: #ffffff !important;
+.update-button {
+    background-color: #f57308 !important;
+    color: #333333 !important;
 }
 
-.save-button:hover {
-    background-color: #1b5e20 !important;
+.update-button:hover {
+    background-color: #f57308 !important;
 }
 
 .cancel-button {
-    background-color: #b71c1c !important;
-    color: #ffffff !important;
+    background-color: #e0e0e0 !important;
+    color: #333333 !important;
 }
 
 .cancel-button:hover {
-    background-color: #7f0000 !important;
+    background-color: #d0d0d0 !important;
 }

@@ -4,8 +4,16 @@
 
 .table-actions button {
     min-width: 100px;
-    color: #b71c1c !important;
+
+    background-color: #1976d2 !important;
+    color: #ffffff !important;
+
     font-size: 0.9rem;
     font-weight: 500;
+
     margin-bottom: 20px;
+}
+
+.table-actions button:hover {
+    background-color: #1565c0 !important;
 }

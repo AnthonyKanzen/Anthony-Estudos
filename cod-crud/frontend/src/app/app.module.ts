@@ -13,6 +13,8 @@ import { RedDirective } from './components/directives/red.directive';
 import { RegisterProductComponent } from './components/register-product/register-product.component';
 import { ReadProductComponent } from './components/read-product/read-product.component';
 import { ProductTableComponent } from './product-table/product-table.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { DeleteProductComponent } from './components/delete-product/delete-product.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -29,6 +31,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
+
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -41,6 +45,8 @@ registerLocaleData(localePt);
     ProductComponent,
     RegisterProductComponent,
     ReadProductComponent,
+    UpdateProductComponent,
+    DeleteProductComponent,
     RedDirective,
     ProductTableComponent
   ],

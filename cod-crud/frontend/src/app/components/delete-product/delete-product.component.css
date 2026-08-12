@@ -41,20 +41,31 @@ mat-form-field {
     font-weight: 500;
 }
 
-.save-button {
-    background-color: #2e7d32 !important;
-    color: #ffffff !important;
-}
-
-.save-button:hover {
-    background-color: #1b5e20 !important;
-}
-
-.cancel-button {
+.delete-button {
     background-color: #b71c1c !important;
     color: #ffffff !important;
 }
 
+.cancel-button {
+    background-color: #e0e0e0 !important;
+    color: #333333 !important;
+}
+
+.delete-button:hover {
+    background-color: #8f1515 !important;
+}
+
 .cancel-button:hover {
-    background-color: #7f0000 !important;
+    background-color: #d0d0d0 !important;
+}
+
+.mat-mdc-text-field-wrapper,
+.mdc-text-field {
+    background-color: #f5f5f5 !important;
+}
+
+.mat-mdc-input-element:disabled {
+    color: #333333 !important;
+    -webkit-text-fill-color: #333333 !important;
+    opacity: 1 !important;
 }
