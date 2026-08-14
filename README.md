@@ -1,6 +1,6 @@
-# 🛒 Sistema de Cadastro de Produtos
+## 🛒 Sobre o projeto 
 
-## 📖 Sobre o projeto
+Sistema de Cadastro de Produtos:
 Este projeto foi desenvolvido durante meus estudos de Angular, 
 com o objetivo de relembrar e reforçar alguns conceitos e colocar em prática a construção de uma aplicação web utilizando CRUD (Create, Read, Update e Delete).
 
