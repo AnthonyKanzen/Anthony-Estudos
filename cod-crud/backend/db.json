@@ -1,14 +1,24 @@
 {
   "products": [
     {
+      "name": "Cadeira",
+      "price": "700",
+      "id": "cpvUC64a2Cc"
+    },
+    {
+      "name": "Monitor",
+      "price": "1000",
+      "id": "1JX7rs9FXLs"
+    },
+    {
       "name": "Mouse",
-      "price": "200,00",
-      "id": "HclM3e30Z20"
+      "price": "200",
+      "id": "ifA1-GOcuQs"
     },
     {
       "name": "Teclado",
-      "price": "200,00",
-      "id": "NCpyVxi6ZJk"
+      "price": "200",
+      "id": "-SXHUQYl6xs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
